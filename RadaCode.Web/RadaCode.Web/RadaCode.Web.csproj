@@ -83,15 +83,17 @@
     <Content Include="apple-touch-icon-72x72-precomposed.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
-    <Content Include="Content\Global\backgroundStripe.png" />
+    <Content Include="Content\global.en.css" />
+    <Content Include="Content\global\backgroundStripe.png" />
     <Content Include="Content\global.css" />
     <Content Include="Content\globalIE.css" />
+    <Content Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.svg" />
     <Content Include="Content\handheld.css" />
-    <Content Include="Content\Home\home.css" />
+    <Content Include="Content\home\home.css" />
     <Content Include="Content\html5.css" />
-    <Content Include="Content\Global\logoRadaCode.png" />
-    <Content Include="Content\Global\logoRadaCodeNoText.png" />
-    <Content Include="Content\Global\radaGlow.png" />
+    <Content Include="Content\global\logoRadaCode.png" />
+    <Content Include="Content\global\logoRadaCodeNoText.png" />
+    <Content Include="Content\global\radaGlow.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -158,15 +160,22 @@
     <Content Include="Views\Home\Index.en.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\Global\fonts\proto_sans_32-webfont.eot" />
-    <None Include="Content\Global\fonts\proto_sans_32-webfont.ttf" />
-    <None Include="Content\Global\fonts\proto_sans_32-webfont.woff" />
-    <None Include="Content\Home\fonts\rex\rex_bold-webfont.eot" />
-    <None Include="Content\Home\fonts\rex\rex_bold-webfont.ttf" />
-    <None Include="Content\Home\fonts\rex\rex_bold-webfont.woff" />
-    <None Include="Content\Home\fonts\rex\rex_light-webfont.eot" />
-    <None Include="Content\Home\fonts\rex\rex_light-webfont.ttf" />
-    <None Include="Content\Home\fonts\rex\rex_light-webfont.woff" />
+    <None Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.eot" />
+    <None Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.ttf" />
+    <None Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.woff" />
+    <None Include="Content\global\fonts\protoSans32Regular\proto_sans_32-webfont.eot" />
+    <None Include="Content\global\fonts\protoSans32Regular\proto_sans_32-webfont.ttf" />
+    <None Include="Content\global\fonts\protoSans32Regular\proto_sans_32-webfont.woff" />
+    <None Include="Content\home\fonts\rel-light-cyr\rex_light-webfont.eot" />
+    <None Include="Content\home\fonts\rel-light-cyr\rex_light-webfont.ttf" />
+    <None Include="Content\home\fonts\rel-light-cyr\rex_light-webfont.woff" />
+    <None Include="Content\home\fonts\rex\rex_bold-webfont.eot" />
+    <None Include="Content\home\fonts\rex\rex_bold-webfont.ttf" />
+    <None Include="Content\home\fonts\rex\rex_bold-webfont.woff" />
+    <None Include="Content\home\fonts\rex\rex_light-webfont.eot" />
+    <None Include="Content\home\fonts\rex\rex_light-webfont.ttf" />
+    <None Include="Content\home\fonts\rex\rex_light-webfont.woff" />
+    <Content Include="Views\Shared\_Layout.en.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

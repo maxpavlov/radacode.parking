@@ -7,3 +7,12 @@ D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Release\ResolveA
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Release\RadaCode.Web.dll
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Release\RadaCode.Web.pdb
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RadaCode.Web.pdb
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RadaCode.Web.dll
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RadaCode.Web.pdb
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\ClientDependency.Core.dll
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\ClientDependency.Core.Mvc.dll
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\EntityFramework.dll
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\EntityFramework.xml
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Release\RadaCode.Web.dll
+C:\Development\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Release\RadaCode.Web.pdb

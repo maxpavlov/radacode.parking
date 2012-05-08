@@ -6,15 +6,24 @@
 		 url('fonts/rex/rex_bold-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'RexLightRegular';
 	src: url('fonts/rex/rex_light-webfont.eot');
 	src: url('fonts/rex/rex_light-webfont.eot?#iefix') format('embedded-opentype'),
 		 url('fonts/rex/rex_light-webfont.woff') format('woff'),
 		 url('fonts/rex/rex_light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face {
+	font-family: "RexLightRegularCyr";
+	src: url('fonts/rel-light-cyr/rex_light-webfont.eot');
+	src: url('fonts/rel-light-cyr/rex_light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/rel-light-cyr/rex_light-webfont.woff') format('woff'),
+		 url('fonts/rel-light-cyr/rex_light-webfont.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,6 +33,6 @@
 }
 
 #slogan h1 {
-	font-family: RexLightRegular;
+	font-family: "RexLightRegularCyr";
 	font-size: 2em;
 }

@@ -40,7 +40,8 @@
 		<style type="text/css">
 				#wrap {display:table;height:100%}
 			</style>
-		<![endif]-->
+			<![endif]-->
+		Html.RequiresCss("global.en.css", "Content", 101);
 		Html.RequiresCss("global.css", "Content", 100);
 		Html.RequiresCss("html5.css", "Content", 99);
 		Html.RequiresCss("handheld.css?v=2", "Content", 97, new { media = "handheld" });
@@ -60,7 +61,7 @@
 	
 	<div id="logoLine">
 		<img src="@Url.Content("~/Content/Global/logoRadaCodeNoText.png")" alt="RadaCode" id="logoImg"/>
-		<span id="logoText">РадаКод</span>
+		<span id="logoText">RadaCode</span>
 	</div>
 	
 		<div id="main" role="main">
