@@ -1,0 +1,8 @@
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\bin\Release\RadaCode.Web.Core.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\bin\Release\RadaCode.Web.Core.pdb
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\bin\Release\Ninject.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\bin\Release\Ninject.pdb
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\bin\Release\Ninject.xml
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\obj\Release\RadaCode.Web.Core.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Core\obj\Release\RadaCode.Web.Core.pdb

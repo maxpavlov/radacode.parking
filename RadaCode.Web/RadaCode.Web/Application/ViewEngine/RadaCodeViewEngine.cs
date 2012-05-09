@@ -33,18 +33,29 @@ namespace RadaCode.Web.Application.ViewEngine
 
             var request = controllerContext.HttpContext.Request;
 
-            if (request.Cookies["language"] != null)
+            try
             {
-                Thread.CurrentThread.CurrentCulture =
-                    Thread.CurrentThread.CurrentUICulture =
-                    new CultureInfo(request.Cookies["language"].Value);
+                if (request.Cookies["language"] != null)
+                {
+                    Thread.CurrentThread.CurrentCulture =
+                        Thread.CurrentThread.CurrentUICulture =
+                        new CultureInfo(request.Cookies["language"].Value);
+                }
+
+                if (request.QueryString["lang"] != null)
+                {
+                    Thread.CurrentThread.CurrentCulture =
+                        Thread.CurrentThread.CurrentUICulture =
+                        new CultureInfo(request.QueryString["lang"]);
+                }
+            }
+            catch
+            {
+                ;
             }
 
-            string localizedViewPath;
-
-            localizedViewPath = string.Format("~/Views/{0}/{1}.{2}.cshtml", controllerName, viewName, Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName);
+            var localizedViewPath = string.Format("~/Views/{0}/{1}.{2}.cshtml", controllerName, viewName, Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName);
             
-
             if (ShouldConsiderArea(controllerContext))
             {
                 var area = string.Format("Areas/{0}/", controllerContext.RouteData.DataTokens["area"]);

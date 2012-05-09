@@ -45,6 +45,19 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.0.15\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\packages\Ninject.Web.Common.3.0.0.7\lib\net40-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc">
+      <HintPath>..\packages\Ninject.MVC3.3.0.0.6\lib\net40-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -68,9 +81,18 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Routing\DomainData.cs" />
+    <Compile Include="Application\Routing\DomainRoute.cs" />
+    <Compile Include="Application\Routing\RoutingModule.cs" />
     <Compile Include="Application\ViewEngine\RadaCodeViewEngine.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Areas\Shipyard\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Shipyard\ShipyardAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -83,12 +105,21 @@
     <Content Include="apple-touch-icon-72x72-precomposed.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Areas\Shipyard\Content\Home\home.css" />
+    <Content Include="Areas\Shipyard\Content\yard-global.css" />
+    <Content Include="Content\expansion\index.html" />
+    <Content Include="Content\expansion\js-mindmap.css" />
+    <Content Include="Content\expansion\js-mindmap.js" />
+    <Content Include="Content\expansion\raphael-min.js" />
+    <Content Include="Content\expansion\script.js" />
+    <Content Include="Content\expansion\style.css" />
     <Content Include="Content\global.en.css" />
     <Content Include="Content\global\backgroundStripe.png" />
     <Content Include="Content\global.css" />
     <Content Include="Content\globalIE.css" />
     <Content Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.svg" />
     <Content Include="Content\handheld.css" />
+    <Content Include="Content\home\fonts\rel-light-cyr\rex_light-webfont.svg" />
     <Content Include="Content\home\home.css" />
     <Content Include="Content\html5.css" />
     <Content Include="Content\global\logoRadaCode.png" />
@@ -148,7 +179,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\Shipyard\Models\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Expansion\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -160,6 +193,12 @@
     <Content Include="Views\Home\Index.en.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Shipyard\Views\Web.config" />
+    <Content Include="Areas\Shipyard\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Shipyard\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Shipyard\Views\Home\Index.en.cshtml" />
+    <Content Include="Areas\Shipyard\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Shipyard\Views\Shared\_Layout.en.cshtml" />
     <None Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.eot" />
     <None Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.ttf" />
     <None Include="Content\global\fonts\protoSans32Cyr\ProtoSans32.woff" />
@@ -172,10 +211,16 @@
     <None Include="Content\home\fonts\rex\rex_bold-webfont.eot" />
     <None Include="Content\home\fonts\rex\rex_bold-webfont.ttf" />
     <None Include="Content\home\fonts\rex\rex_bold-webfont.woff" />
-    <None Include="Content\home\fonts\rex\rex_light-webfont.eot" />
-    <None Include="Content\home\fonts\rex\rex_light-webfont.ttf" />
-    <None Include="Content\home\fonts\rex\rex_light-webfont.woff" />
     <Content Include="Views\Shared\_Layout.en.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RadaCode.Web.Core\RadaCode.Web.Core.csproj">
+      <Project>{8D2C41C2-1E19-44E2-A384-55895B2181FE}</Project>
+      <Name>RadaCode.Web.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -193,8 +238,8 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>43397</DevelopmentServerPort>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>80</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
