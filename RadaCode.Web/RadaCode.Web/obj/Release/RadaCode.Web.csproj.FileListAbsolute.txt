@@ -29,3 +29,5 @@ D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\Ninject.Web.Comm
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\Ninject.Web.Common.xml
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\Ninject.Web.Mvc.pdb
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\Ninject.Web.Mvc.xml
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RadaCode.Web.Data.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RadaCode.Web.Data.pdb
