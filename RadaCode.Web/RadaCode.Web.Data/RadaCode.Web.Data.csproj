@@ -53,8 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\WebStoreContext.cs" />
-    <Compile Include="EF\WebStoreContextInitializer.cs" />
+    <Compile Include="EF\RadaCodeWebStoreContext.cs" />
+    <Compile Include="EF\RadaCodeWebStoreContextInitializer.cs" />
     <Compile Include="Entities\WebUser.cs" />
     <Compile Include="Entities\WebUserRole.cs" />
     <Compile Include="FilexDataDependenciesModule.cs" />

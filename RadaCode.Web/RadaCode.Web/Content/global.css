@@ -16,6 +16,7 @@
     font-style: normal;
 }
 
+::selection { background:#FFDC0B; text-shadow: none; }
 
 html {
     overflow-y: auto;
