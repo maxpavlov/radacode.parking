@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaCode.Web.Core", "RadaCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaCode.Web.Data", "RadaCode.Web.Data\RadaCode.Web.Data.csproj", "{D2E694FC-88A0-46C9-9ADA-930B53CCB47A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{82C60C1F-5474-4F75-AAB8-921D3C027670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaCode.Data.Tests", "RadaCode.Data.Tests\RadaCode.Data.Tests.csproj", "{65490A0F-0FED-4E33-85A3-7113456DB32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,8 +35,15 @@ Global
 		{D2E694FC-88A0-46C9-9ADA-930B53CCB47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2E694FC-88A0-46C9-9ADA-930B53CCB47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2E694FC-88A0-46C9-9ADA-930B53CCB47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65490A0F-0FED-4E33-85A3-7113456DB32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65490A0F-0FED-4E33-85A3-7113456DB32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65490A0F-0FED-4E33-85A3-7113456DB32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65490A0F-0FED-4E33-85A3-7113456DB32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65490A0F-0FED-4E33-85A3-7113456DB32A} = {82C60C1F-5474-4F75-AAB8-921D3C027670}
 	EndGlobalSection
 EndGlobal

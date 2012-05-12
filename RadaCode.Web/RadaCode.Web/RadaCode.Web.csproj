@@ -86,6 +86,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Composition\WebCompositionModule.cs" />
     <Compile Include="Application\Membership\WebUserMembershipProvider.cs" />
     <Compile Include="Application\Membership\WebUserRoleProvider.cs" />
     <Compile Include="Application\Routing\DomainData.cs" />

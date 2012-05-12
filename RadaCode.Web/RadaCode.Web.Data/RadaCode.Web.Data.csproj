@@ -57,7 +57,7 @@
     <Compile Include="EF\RadaCodeWebStoreContextInitializer.cs" />
     <Compile Include="Entities\WebUser.cs" />
     <Compile Include="Entities\WebUserRole.cs" />
-    <Compile Include="FilexDataDependenciesModule.cs" />
+    <Compile Include="WebDataDependenciesModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\WebUserRepository.cs" />
     <Compile Include="Repositories\IWebUserRepository.cs" />

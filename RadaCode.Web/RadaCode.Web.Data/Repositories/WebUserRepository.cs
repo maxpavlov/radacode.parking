@@ -9,9 +9,9 @@ namespace RadaCode.Web.Data.Repositories
 {
     public class WebUserRepository : IWebUserRepository
     {
-        private WebStoreContext _db; 
+        private RadaCodeWebStoreContext _db;
 
-        public WebUserRepository(WebStoreContext context)
+        public WebUserRepository(RadaCodeWebStoreContext context)
         {
             _db = context;
             _db.WebUsers.ToList();
@@ -203,7 +203,9 @@ namespace RadaCode.Web.Data.Repositories
 
         public void AddRoleToUser(WebUser user, WebUserRole role)
         {
+            if(user.Roles == null) user.Roles = new List<WebUserRole>();
             user.Roles.Add(role);
+            SaveChanges();
         }
 
         public void DeleteRole(WebUserRole role)

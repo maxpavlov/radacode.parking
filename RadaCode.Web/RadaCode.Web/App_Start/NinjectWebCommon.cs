@@ -1,6 +1,8 @@
 using System.Web.Routing;
+using RadaCode.Web.Application.Composition;
 using RadaCode.Web.Application.Routing;
 using RadaCode.Web.Core;
+using RadaCode.Web.Data;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(RadaCode.Web.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(RadaCode.Web.App_Start.NinjectWebCommon), "Stop")]
@@ -59,7 +61,9 @@ namespace RadaCode.Web.App_Start
         {
             kernel.Load(
                 new RadaCodeWebCoreModule(),
-                new RoutingModule(RouteTable.Routes));
+                new RoutingModule(RouteTable.Routes),
+                new WebDataDependenciesModule(),
+                new WebCompositionModule());
         }        
     }
 }

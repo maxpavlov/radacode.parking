@@ -9,7 +9,7 @@ namespace RadaCode.Web.Data
     {
         public override void Load()
         {
-            Bind<WebStoreContext>().ToSelf().InRequestScope();
+            Bind<RadaCodeWebStoreContext>().ToSelf().InRequestScope();
             Bind<IWebUserRepository>().To<WebUserRepository>().InRequestScope();
         }
     }
