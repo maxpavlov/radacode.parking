@@ -38,7 +38,7 @@ namespace RadaCode.Data.Tests
         }
 
         [Test]
-        public void isUserInRole()
+        public void IsUserInRole()
         {
             _repo = new WebUserRepository(_context);
 
