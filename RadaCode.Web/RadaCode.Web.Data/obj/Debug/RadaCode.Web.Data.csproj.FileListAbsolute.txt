@@ -1,0 +1,14 @@
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\RadaCode.Web.Data.dll.config
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\RadaCode.Web.Data.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\RadaCode.Web.Data.pdb
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\EntityFramework.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\Ninject.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\Ninject.Web.Common.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\EntityFramework.xml
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\Ninject.pdb
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\Ninject.xml
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\Ninject.Web.Common.pdb
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\bin\Debug\Ninject.Web.Common.xml
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\obj\Debug\RadaCode.Web.Data.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web.Data\obj\Debug\RadaCode.Web.Data.pdb

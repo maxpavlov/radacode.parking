@@ -1,0 +1,37 @@
+﻿@model RadaCode.Web.Models.LoginModel
+
+@{
+    ViewBag.Title = "Вход в систему ~ РадаКод";
+
+    Layout = "~/Views/Shared/_Layout.cshtml"; // PUT A CUSTOM LAYOUT HERE
+
+    Html.RequiresJs("jquery.validate.min.js", "Scripts", 5);
+    Html.RequiresJs("jquery.validate.unobtrusive.min.js", "Scripts", 5);
+}
+
+<h2>Привет</h2>
+
+@using (Html.BeginForm((string)ViewBag.FormAction, "Access")) {
+    @Html.ValidationSummary(true, "Доступ не предоставлен. Пожалуйста, введи правильные данные.")
+
+    <fieldset>
+        <legend>Данные для входа</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+            <li>
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+            </li>
+        </ol>
+        <input type="submit" value="Log in" />
+    </fieldset>
+}

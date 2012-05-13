@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using RadaCode.Web.Data.EF;
 using RadaCode.Web.Data.Repositories;
+using RadaCode.Web.Data.Utils;
 
 namespace RadaCode.Data.Tests
 {
@@ -26,7 +27,7 @@ namespace RadaCode.Data.Tests
         public void CreateRoleAndUserTest()
         {
             _repo.AddRole("Star");
-            var user = _repo.CreateUser("Max Pavlov", "q1w2e3", "max@radacode.com");
+            var user = _repo.CreateUser("Max Pavlov", Crypto.HashPassword("q1w2e3"), "max@radacode.com");
 
             _repo.AddRoleToUser(user.Id, "Star");
 

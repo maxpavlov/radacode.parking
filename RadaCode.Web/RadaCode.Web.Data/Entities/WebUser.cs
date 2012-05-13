@@ -16,6 +16,7 @@ namespace RadaCode.Web.Data.Entities
         [Required, DataType(DataType.Password)]
         public virtual string Password { get; set; }
 
+        [DataType(DataType.EmailAddress)]
         public virtual string Email { get; set; }
 
         public virtual int PasswordFailuresSinceLastSuccess { get; set; }
