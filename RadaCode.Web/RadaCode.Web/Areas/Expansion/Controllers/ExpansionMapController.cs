@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using RadaCode.Web.Application.ActionFilters;
 
 namespace RadaCode.Web.Areas.Expansion.Controllers
 {
@@ -10,7 +7,7 @@ namespace RadaCode.Web.Areas.Expansion.Controllers
     {
         //
         // GET: /Expansion/ExpansionMap/
-
+        [CoolAuthorize]
         public ActionResult Index()
         {
             return View();

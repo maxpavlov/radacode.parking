@@ -15,9 +15,9 @@ namespace RadaCode.Web.Areas.Expansion
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "Expansion_default",
+                "ExpansionDef",
                 "Expansion/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { area = this.AreaName, controller = "ExpansionMap", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

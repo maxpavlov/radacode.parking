@@ -22,3 +22,5 @@ D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\Ninject.Web.Mvc.
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Debug\RadaCode.Web.dll
 D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\obj\Debug\RadaCode.Web.pdb
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RouteMagic.dll
+D:\Projects\RadaCode\radacode.com\RadaCode.Web\RadaCode.Web\bin\RouteMagic.Mvc.dll

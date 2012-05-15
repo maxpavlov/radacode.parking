@@ -15,7 +15,7 @@
     @Html.ValidationSummary(true, "Доступ не предоставлен. Пожалуйста, введи правильные данные.")
 
     <fieldset>
-        <legend>Данные для входа</legend>
+        <legend>Данные для входа на @ViewBag.SourceAction</legend>
         <ol>
             <li>
                 @Html.LabelFor(m => m.UserName)

@@ -33,6 +33,7 @@ namespace RadaCode.Web.Controllers
         private ActionResult ContextDependentView()
         {
             var actionName = ControllerContext.RouteData.GetRequiredString("action");
+            var originalAction = ControllerContext.RouteData.GetRequiredString("sourceAction");
             if (Request.QueryString["content"] != null)
             {
                 ViewBag.FormAction = "Json" + actionName;
@@ -41,6 +42,7 @@ namespace RadaCode.Web.Controllers
             else
             {
                 ViewBag.FormAction = actionName;
+                ViewBag.SourceAction = originalAction;
                 return View();
             }
         }

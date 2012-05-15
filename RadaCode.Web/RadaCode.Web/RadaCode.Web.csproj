@@ -59,6 +59,12 @@
     <Reference Include="Ninject.Web.Mvc">
       <HintPath>..\packages\Ninject.MVC3.3.0.0.6\lib\net40-full\Ninject.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="RouteMagic">
+      <HintPath>..\packages\RouteMagic.0.2.2.2\lib\net40\RouteMagic.dll</HintPath>
+    </Reference>
+    <Reference Include="RouteMagic.Mvc">
+      <HintPath>..\packages\RouteMagic.Mvc.1.2\lib\net40\RouteMagic.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
@@ -90,6 +96,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ActionFilters\CoolAuthorizationFilter.cs" />
     <Compile Include="Application\Composition\WebCompositionModule.cs" />
     <Compile Include="Application\Membership\WebUserMembershipProvider.cs" />
     <Compile Include="Application\Membership\WebUserRoleProvider.cs" />
