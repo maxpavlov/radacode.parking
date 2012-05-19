@@ -5,3 +5,4 @@
 */bin/*
 */bin/*
 src/*/bin
+*.suo

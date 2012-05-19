@@ -1,13 +1,12 @@
 ﻿using System.Web.Mvc;
-using RadaCode.Web.Application.ActionFilters;
 
 namespace RadaCode.Web.Areas.Expansion.Controllers
 {
-    public class ExpansionMapController : Controller
+    public class ExpansionController : Controller
     {
         //
-        // GET: /Expansion/ExpansionMap/
-        [CoolAuthorize]
+        // GET: /Expansion/Expansion/
+
         public ActionResult Index()
         {
             return View();

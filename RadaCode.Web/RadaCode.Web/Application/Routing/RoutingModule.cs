@@ -16,14 +16,13 @@ namespace RadaCode.Web.Application.Routing
         public override void Load()
         {
             _routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            //_routes.IgnoreRoute("Areas/Upload/FilesHandler/Handler.ashx");
+            _routes.IgnoreRoute("Scripts/{*pathInfo}");
 
             _routes.MapRoute(
                 "Default",                                               // Route name
                 "{controller}/{action}/{id}",                            // URL with parameters
-                new { controller = "Home", action = "Index", id = "" },   // Parameter defaults
-                new string[] { "RadaCode.Web.Controllers" }
+                new { controller = "Home", action = "Index", id = "" },  // Parameter defaults
+                new string[] { "RadaCode.Web.Controllers" }              // Namespance
             );
         }
     }

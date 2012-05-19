@@ -26,7 +26,7 @@ namespace RadaCode.Web.Areas.shipyard
 
             dataTokens["Namespaces"] = ns;
 
-            context.Routes.Insert(1, new DomainRoute(
+            context.Routes.Insert(2, new DomainRoute(
                                     domainParams,                                                           // Domain with parameters
                                     "",                                                                     // URL with parameters 
                                     new { area = this.AreaName, controller = "Home", action = "Index" },    // Parameter defaults 

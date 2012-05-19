@@ -12,12 +12,12 @@ namespace RadaCode.Web
 
         protected void Application_Start()
         {
-            AreaRegistration.RegisterAllAreas();
-
             RegisterGlobalFilters(GlobalFilters.Filters);
 
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RadaCodeViewEngine());
+
+            AreaRegistration.RegisterAllAreas();
         }
     }
 }
