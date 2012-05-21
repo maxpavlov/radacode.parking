@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.en.cshtml"; // PUT CUSTOM LAYOUT HERE
+}
+
+@if (Request.IsAuthenticated) {
+    <p>
+        Hello, @Html.ActionLink(User.Identity.Name, "ChangePassword", "Access", routeValues: null, htmlAttributes: new { @class = "username", title = "Change password" })!
+        @Html.ActionLink("Log off", "LogOff", "Access")
+    </p>
+} else {
+    <ul>
+        <li>@Html.ActionLink("Log in", "Login", "Access", routeValues: null, htmlAttributes: new { id = "loginLink", data_dialog_title = "Identification" })</li>
+    </ul>
+}
